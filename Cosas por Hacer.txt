@@ -1,2 +1,4 @@
 - Eliminar Outliers usando IQR / 3std - Nos quedamos con el que menos bote, podemos separar 
-- 
+- Buscar duplicados, titulo y descripción, y precio... si todo igual dejar una instancia, si precio cambia dejar ultimo
+- erificarque no falten baños en casa, ph, apto. Despues de elegir esos 3.
+- Encoding para tipo de propiedad (Casa, Apto, PH)
