@@ -1,0 +1,2 @@
+- Eliminar Outliers usando IQR / 3std - Nos quedamos con el que menos bote, podemos separar 
+- 
