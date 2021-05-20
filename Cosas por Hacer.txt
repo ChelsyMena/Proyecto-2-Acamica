@@ -1,9 +1,12 @@
-- Eliminar Outliers usando IQR / 3std - Nos quedamos con el que menos bote, podemos separar 
+- (ya) Eliminar Outliers usando IQR / 3std - Nos quedamos con el que menos bote, podemos separar 
 - (ya) Buscar duplicados, titulo y descripción, y precio... si todo igual dejar una instancia, si precio cambia dejar ultimo
-- Verificar que no falten baños en casa, ph, apto. Despues de elegir esos 3.
+- Verificar que no falten baños en casa, ph, apto. (ya) Despues de elegir esos 3.
 - Encoding para tipo de propiedad (Casa, Apto, PH)
 - Escalar las superficies
 
+Ideas
+- Hacer un modelo extra para las propiedades caras
+- Hacer clustering por barrio y ponerles el centroide a los faltantes de lat y lon, dibujar poligonos en un mapa
 
 Preguntas
 - Encoders, como funcionan
