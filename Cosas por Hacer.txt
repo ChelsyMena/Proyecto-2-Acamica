@@ -1,12 +1,25 @@
 - (ya) Eliminar Outliers usando IQR / 3std - Nos quedamos con el que menos bote, podemos separar 
 - (ya) Buscar duplicados, titulo y descripción, y precio... si todo igual dejar una instancia, si precio cambia dejar ultimo
-- Verificar que no falten baños en casa, ph, apto. (ya) Despues de elegir esos 3.
-- Encoding para tipo de propiedad (Casa, Apto, PH)
-- Escalar las superficies
+- (ya) Verificar que no falten baños en casa, ph, apto. Despues de elegir esos 3.
+- (ya) Encoding para tipo de propiedad (Casa, Apto, PH)
+- (ya) Escalar las superficies
+- (ya) Poner Promedios de lat y lon por barrio en NAs
+
+______________________________________________________________________
+
+- Modelos avanzados: Polynomial Features, Boosting
+    - Train Test Split, Grid Search (n_folds = 5) a cada uno
+        - Dataset sin outliers, escalado y encodeado, eliger mejor de cada uno
+        - Con ese mejor, hacer PCA con n_components = [2, 3, 4, 5, 6, 7], y re entrenar el modelo PF y BOOSTING
+        
+- Modelo del P1: Arbol de Decisión 
+    Valeria: modeldt = DecisionTreeRegressor(max_depth = 14, random_state = 42)
+    Chelsy: modeldt = DecisionTreeRegressor(max_depth = 30, random_state = 7)
+
+
 
 Ideas
-- Hacer un modelo extra para las propiedades caras
-- Hacer clustering por barrio y ponerles el centroide a los faltantes de lat y lon, dibujar poligonos en un mapa
+- Hacer clustering por barrio y ponerles el centroide a los faltantes de lat y lon, dibujar poligonos y centroides sobre un mapa
 
 Preguntas
 - Encoders, como funcionan
