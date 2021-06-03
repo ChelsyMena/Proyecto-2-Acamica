@@ -8,20 +8,19 @@
 ______________________________________________________________________
 
 - Modelos avanzados: Polynomial Features, Boosting
-    - Train Test Split, Grid Search (n_folds = 5) a cada uno
+    - Train Test Split, Grid Search y Cross Validation (n_folds = 5) a cada uno
         - Dataset sin outliers, escalado y encodeado, eliger mejor de cada uno
-        - Con ese mejor, hacer PCA con n_components = [2, 3, 4, 5, 6, 7], y re entrenar el modelo PF y BOOSTING
         
-- Modelo del P1: Arbol de Decisión 
+- (ya) Modelo del P1: Arbol de Decisión 
     Valeria: modeldt = DecisionTreeRegressor(max_depth = 14, random_state = 42)
     Chelsy: modeldt = DecisionTreeRegressor(max_depth = 30, random_state = 7)
+     NOS QUEDAMOS CON max_depth = 11
 
 
-
-Ideas
-- Hacer clustering por barrio y ponerles el centroide a los faltantes de lat y lon, dibujar poligonos y centroides sobre un mapa
+Ideas Challenge
+- Hacer clustering por barrio y ponerles el centroide de acuerdo a lat y lon, dibujar poligonos y centroides sobre un mapa
 
 Preguntas
-- Encoders, como funcionan
-- Escalado, necesario en baños? Hay que escalar todo?
-- Cuanta area implica un baño más?
+- La data queda mejor antes de PCA, por que? podemos hacer PCA por segmentos: 
+  Juntar sup cubierta y total en un PC, rooms bedrooms and bathrooms en otro, lat y lon en otro...
+  Es necesario meter el encoding en el PCA?
