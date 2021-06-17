@@ -7,7 +7,7 @@
 
 ______________________________________________________________________
 
-- Modelos avanzados: Polynomial Features, Boosting
+- (ya) Modelos avanzados: Polynomial Features, Boosting
     - Train Test Split, Grid Search y Cross Validation (n_folds = 5) a cada uno
         - Dataset sin outliers, escalado y encodeado, eliger mejor de cada uno
         
@@ -18,9 +18,18 @@ ______________________________________________________________________
 
 
 Ideas Challenge
-- Hacer clustering por barrio y ponerles el centroide de acuerdo a lat y lon, dibujar poligonos y centroides sobre un mapa
+- (ya) Hacer clustering por barrio y ponerles el centroide de acuerdo a lat y lon, dibujar poligonos y centroides sobre un mapa
 
 Preguntas
-- La data queda mejor antes de PCA, por que? podemos hacer PCA por segmentos: 
+- (ya, tampoco sirvió) La data queda mejor antes de PCA, por que? podemos hacer PCA por segmentos: 
   Juntar sup cubierta y total en un PC, rooms bedrooms and bathrooms en otro, lat y lon en otro...
   Es necesario meter el encoding en el PCA?
+
+  _____________________________________________________________________________________________________
+
+  - Punto B, hay atributos de estos modelos que no estamos tocando, como la eficiencia de cada paso o algo asi?
+  - Punto C, justificar todo lo de arriba
+  - Comentar comentar comentar y explicar, especialmente las funciones. Agregar docstring
+  - Organizar bien, PCA donde quedó al fin? Poner mejores títulos
+  - Eliminar celdas redundantes de importaciones y lecturas de csv
+  - Exportar mapa a html a ver si funciona afuera
